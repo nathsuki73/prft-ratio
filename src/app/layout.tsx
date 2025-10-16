@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+
+// @ts-expect-error Typescript doesn't know what css file is
 import "./globals.css";
 
 const geistSans = Geist({

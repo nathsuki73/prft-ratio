@@ -1,10 +1,15 @@
 'use client'
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef} from 'react'
 import { gsap } from "gsap";
 import { useGSAP } from '@gsap/react';
 
-const MenuButton = () => {
-  const [isOpen, setOpen] = useState(true)
+type MenuButtonProps = {
+  isOpen: boolean
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+
+const MenuButton = ({isOpen, setOpen}: MenuButtonProps) => {
   const container = useRef<HTMLDivElement>(null);
   const tl = useRef<GSAPTimeline>(null)
 
@@ -35,7 +40,7 @@ const MenuButton = () => {
         <div
         onClick={() => handleClick()} 
         ref={container}
-        className={`flex flex-col justify-center items-end w-10 gap-2 h-10 overflow-hidden cursor-pointer`}>
+        className={`sm:hidden flex flex-col justify-center items-end w-10 gap-2 h-10 overflow-hidden cursor-pointer`}>
             <span className={`bar1 h-[2px] w-full transition-all bg-black duration-500 ease-in-out`}></span>
             <span className={`bar2 h-[2px] w-full transition-all bg-black duration-500 ease-in-out`}></span>
         </div>

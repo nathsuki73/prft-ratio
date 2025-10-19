@@ -6,6 +6,7 @@ import { useGSAP } from '@gsap/react';
 import icon from '@/assets/icon.ico'
 import MenuButton from './buttons/MenuButton'
 
+
 export const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(true);
 
@@ -27,12 +28,26 @@ export const Header = () => {
     }
   }, [isMenuOpen])
 
+  useEffect(() => {
+
+    
+    const handleResize = () => {
+      setMenuOpen(true)
+    }
+    window.addEventListener("resize", handleResize)
+
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+
+  })
+
   return (
     <header 
     ref={container}
     className="container1 px-6 block sm:flex justify-between items-center border-b-1 h-12 overflow-hidden">
       <div className='flex justify-between'>
-        <Image src={icon} alt="Logo" className="logo size-12" />
+        <Image priority src={icon} alt="Logo" className="logo size-12" />
         <MenuButton isOpen={isMenuOpen} setOpen={setMenuOpen}></MenuButton>
       </div>
       <nav className="">

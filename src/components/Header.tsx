@@ -29,8 +29,6 @@ export const Header = () => {
   }, [isMenuOpen])
 
   useEffect(() => {
-
-    
     const handleResize = () => {
       setMenuOpen(true)
     }
@@ -40,24 +38,27 @@ export const Header = () => {
       window.removeEventListener("resize", handleResize)
     }
 
-  })
+  }, [])
 
   return (
-    <header 
-    ref={container}
-    className="container1 px-6 block sm:flex justify-between items-center border-b-1 h-12 overflow-hidden">
-      <div className='flex justify-between'>
-        <Image priority src={icon} alt="Logo" className="logo size-12" />
-        <MenuButton isOpen={isMenuOpen} setOpen={setMenuOpen}></MenuButton>
-      </div>
-      <nav className="">
-        <ul className="flex flex-col sm:flex-row gap-4 place-items-end">
-          <li><a href="#" className="hover:underline">MENU</a></li>
-          <li><a href="#" className="hover:underline">LOCATIONS</a></li>
-          <li><a href="#" className="hover:underline">ABOUT US</a></li>
-          <li><a href="#" className="hover:underline">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div className='sticky top-0 left-0'>
+      <header 
+      ref={container}
+      className="container1 px-6 block sm:flex justify-between items-center border-b-1 h-12 overflow-hidden">
+        <div className='flex justify-between'>
+          <Image priority src={icon} alt="Logo" className="logo size-12" />
+          <MenuButton isOpen={isMenuOpen} setOpen={setMenuOpen}></MenuButton>
+        </div>
+        <nav className="">
+          <ul className="flex flex-col sm:flex-row gap-4 place-items-end">
+            <li><a href="#" className="hover:underline">MENU</a></li>
+            <li><a href="#" className="hover:underline">LOCATIONS</a></li>
+            <li><a href="#" className="hover:underline">ABOUT US</a></li>
+            <li><a href="#" className="hover:underline">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    
   )
 }

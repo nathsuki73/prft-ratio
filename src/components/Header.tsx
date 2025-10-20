@@ -44,7 +44,7 @@ export const Header = () => {
     <div className='sticky top-0 left-0'>
       <header 
       ref={container}
-      className="container1 px-6 block sm:flex justify-between items-center border-b-1 h-12 overflow-hidden">
+      className="container1 px-6 block sm:flex justify-between items-center border-b-1 h-12 overflow-hidden bg-background">
         <div className='flex justify-between'>
           <Image priority src={icon} alt="Logo" className="logo size-12" />
           <MenuButton isOpen={isMenuOpen} setOpen={setMenuOpen}></MenuButton>

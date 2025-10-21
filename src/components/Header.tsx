@@ -41,7 +41,7 @@ export const Header = () => {
   }, [])
 
   return (
-    <div className='sticky top-0 left-0'>
+    <div className='sticky top-0 left-0 z-50'>
       <header 
       ref={container}
       className="container1 px-6 block sm:flex justify-between items-center border-b-1 h-12 overflow-hidden bg-background">

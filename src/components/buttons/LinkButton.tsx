@@ -8,7 +8,7 @@ type LinkButtonProps = {
 
 const LinkButton = ({reverse = true, val}: LinkButtonProps) => {
   return (
-    <Link href="" className={`flex border-2 h-11 justify-center items-center  ${reverse ? "":"bg-foreground text-background"} `}>
+    <Link href="" className={`flex border-2 h-11 w-full justify-center items-center  ${reverse ? "":"bg-foreground text-background"} `}>
         {val}
     </Link>
   )

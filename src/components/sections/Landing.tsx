@@ -3,7 +3,7 @@ import LinkButton from '../buttons/LinkButton'
 import Image from 'next/image'
 export const Landing = () => {
   return (
-    <section className='flex flex-col gap-4 px-6 md:px-12 lg:px-32 h-screen py-4'>
+    <section className='flex flex-col gap-4 px-6 md:px-12 lg:px-32 2xl:px-110  h-screen py-4'>
       <div className='relative border-8 lg:w-3/4'>
         <div className='relative text-7xl sm:text-8xl text-center font-bold z-10'>
             <h1 className=''>PRFCT</h1>

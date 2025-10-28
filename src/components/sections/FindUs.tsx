@@ -3,14 +3,16 @@ import Image from 'next/image'
 import LinkButton from '../buttons/LinkButton'
 export const FindUs = () => {
   return (
-    <div className="relative w-full h-96">
-        <Image
-            src="/coffee-bg.png"
-            alt="coffee background"
-            fill
-            className="object-cover"
-            priority
-        />
+    <div className="relative w-full h-96 bg-[#3C2A21]">
+        <div className='relative w-full min-h-10/12  py-24'>
+            <Image
+                src="/coffee-bg.png"
+                alt="coffee background"
+                fill
+                className="object-cover"
+                priority
+            />
+        </div>
 
         <div className='absolute inset-0'>
             <div className='flex flex-col p-4 justify-center items-center lg:items-start gap-8 sm:w-4/5 lg:w-3/5 ml-auto text-center lg:text-start'>

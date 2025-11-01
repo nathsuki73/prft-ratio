@@ -3,6 +3,8 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 
 // @ts-expect-error Typescript doesn't know what css file is
 import "./globals.css";
+import Footer from "@/components/sections/Footer";
+import { Header } from "@/components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,7 +36,9 @@ export default function RootLayout({
       <body
         className={`${inter.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

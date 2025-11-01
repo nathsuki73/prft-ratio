@@ -5,12 +5,15 @@ export const Contact = () => {
   return (
     <section className="relative flex flex-col gap-4 px-6 md:px-12 lg:px-32 2xl:px-110 w-full h-96 py-24">
         <h1 className='text-6xl sm:text-8xl font-bold'>Contact Us.</h1>
-        <div className='grid grid-cols-2'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 '>
            <TextField label="Name" />
            <TextField label="Phone" />
            <TextField label="Email" />
            <TextField label="Subject" />
-           <TextField label="Message" className='col-span-2' />
+           <TextField label="Message" className='sm:col-span-2' />
+        </div>
+        <div className='w-full sm:w-1/3 lg:w-1/4  self-end'>
+            <LinkButton val='Send Us' reverse={false}></LinkButton>
         </div>
     </section>
 

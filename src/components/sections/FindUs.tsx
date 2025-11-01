@@ -3,7 +3,7 @@ import Image from 'next/image'
 import LinkButton from '../buttons/LinkButton'
 export const FindUs = () => {
   return (
-    <div className="relative w-full h-96 bg-[#3C2A21]">
+    <div className="relative w-full  h-116 md:h-96 bg-[#3C2A21]">
         <div className='relative w-full min-h-10/12  py-24'>
             <Image
                 src="/coffee-bg.png"

@@ -8,9 +8,9 @@ export const ShowcaseMenu = () => {
         <h1 className='text-6xl sm:text-8xl font-bold'>Explore<br />the Menu</h1>
         <div  className='flex flex-col gap-8'>
             
-            <Description img='/espresso.png' head='Espresso, Latte & Frappe' body='“From bold espresso shots to creamy lattes and ice-blended frappes — every cup is crafted to energize your day.”'></Description>
-            <Description img='/pasta.png' head='Creamy, Dreamy Pasta' body='“Rich sauces, perfectly cooked noodles, and flavors that warm your soul.”'></Description>
-            <Description img='/burger.png' head='Irresistible Burgers' body='“Juicy, cheesy, and packed with bold flavor — every bite hits just right.”'></Description>
+            <Description img='/espresso.webp' head='Espresso, Latte & Frappe' body='“From bold espresso shots to creamy lattes and ice-blended frappes — every cup is crafted to energize your day.”'></Description>
+            <Description img='/pasta.webp' head='Creamy, Dreamy Pasta' body='“Rich sauces, perfectly cooked noodles, and flavors that warm your soul.”'></Description>
+            <Description img='/burger.webp' head='Irresistible Burgers' body='“Juicy, cheesy, and packed with bold flavor — every bite hits just right.”'></Description>
         </div>
     </section>
   )
@@ -30,8 +30,9 @@ const Description = ({head, body, img}: DescriptionProps) => {
                 className='absolute -top-16' 
                 alt='image1' 
                 src={img} 
-                width={320} 
-                height={200} 
+                width={500}
+                height={300}
+                style={{ width: "100%", height: "auto" }}
                 />
         </div>
         <div className='flex flex-col sm:w-1/2 gap-8  h-80 justify-between'>

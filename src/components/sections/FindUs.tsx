@@ -6,7 +6,7 @@ export const FindUs = () => {
     <div className="relative w-full  h-116 md:h-96 bg-[#3C2A21]">
         <div className='relative w-full min-h-10/12  py-24'>
             <Image
-                src="/coffee-bg.png"
+                src="/coffee-bg.webp"
                 alt="coffee background"
                 fill
                 className="object-cover"

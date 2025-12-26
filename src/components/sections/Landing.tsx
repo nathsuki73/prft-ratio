@@ -14,9 +14,10 @@ export const Landing = () => {
         <Image 
           className='absolute left-0 -top-38 lg:left-auto lg:right-0' 
           alt='image1' 
-          src={"/image1.png"} 
+          src={"/image1.webp"} 
           width={320} 
           height={200} 
+          priority
         />
       </div>
       <h1 className='lg:w-1/2'>We’re more than coffee — we’re a gathering place for friends, creators, and dreamers.</h1>

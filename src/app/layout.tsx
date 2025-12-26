@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
-
-// @ts-expect-error Typescript doesn't know what css file is
 import "./globals.css";
 import Footer from "@/components/sections/Footer";
 import { Header } from "@/components/Header";

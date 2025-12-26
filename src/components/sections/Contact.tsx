@@ -36,7 +36,7 @@ const TextField: React.FC<TextFieldProps> = ({ label, className }) => {
             <input
                 id={`${inputId}`}
                 type="text"
-                placeholder="Enter your name"
+                placeholder={`Enter your ${label}`}
                 className="w-full border-b-2 border-black p-2 text-gray-900 outline-none transition"
             />
     </div>

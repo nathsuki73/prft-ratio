@@ -7,7 +7,7 @@ import { LiaFacebookSquare } from "react-icons/lia";
 
 const Footer = () => {
   return (
-    <section className='w-screen bg-[#3C2A21] text-[#D5CEA3] flex flex-col text-center sm:text-start sm:flex-row sm:justify-between gap-8 px-6 md:px-12 lg:px-32 2xl:px-110 py-8 items-center sm:items-start'>
+    <section className='bg-[#3C2A21] text-[#D5CEA3] flex flex-col text-center sm:text-start sm:flex-row sm:justify-between gap-8 px-6 md:px-12 lg:px-32 2xl:px-110 py-8 items-center sm:items-start'>
         <div className='flex flex-col w-4/6 gap-2 sm:max-w-xs items-center sm:items-start '>
             <Image priority src={icon} alt="Logo" className="logo size-12" />
             <h1>We proudly serve one of the best coffees in Laguna — freshly brewed, always perfect.</h1>

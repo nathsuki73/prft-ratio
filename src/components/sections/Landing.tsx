@@ -23,7 +23,7 @@ export const Landing = () => {
       <h1 className='lg:w-1/2'>We’re more than coffee — we’re a gathering place for friends, creators, and dreamers.</h1>
       <div className='flex flex-col w-full gap-2 sm:flex-row sm:w-3/4 lg:w-1/3'>
         <LinkButton reverse={false} val="Find Us" ></LinkButton>
-        <LinkButton val='More About Us'></LinkButton>
+        <LinkButton val='About Us'></LinkButton>
       </div>
     </section>  
   )
